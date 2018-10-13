@@ -32,11 +32,12 @@ int main(){
 	time_t current = time(NULL);
 	std::string szNumber;
 	std::string szTempString;
+	std::string szGetInput;
 	std::fstream myfile;
 	myfile.open("DataSet.txt", std::fstream::out);
 	srand(current);
 	std::cout << "\nPlease input a random number.\n";
-	std::string szGetInput = std::cin;
+	std::cin >> szGetInput;
 	if(myfile.is_open()){
 		std::cout << "Data is being written.\n";
 		for(int i=0; i<20; i++){

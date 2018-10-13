@@ -106,8 +106,8 @@
 				delete m_pRoot;
 			}
 			else{
-				printf("This tree only has a root. If you delete this Node the"
-						" tree will be deleted.\n");
+				std::cout<< "This tree only has a root. If you delete this Node the"
+						" tree will be deleted.\n";
 			}
 		}
 		else if(nData > m_pRoot->nData && m_pRoot->pRight != nullptr){
